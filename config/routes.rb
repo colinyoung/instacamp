@@ -1,11 +1,20 @@
 Instacamp::Application.routes.draw do
+
   devise_for :users
+  
+  get 'profile/edit'  
+  
+  put 'profile/update'
 
   get "welcome/index"
 
   get "welcome/about"
   
   post "searches", :controller => "searches", :action => "create"
+  
+  post "chat/new"
+  
+  get 'user', :as => "user", :controller => 'blank'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

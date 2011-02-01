@@ -1,0 +1,2 @@
+GOOGLE_IMAGE_SEARCH_API_KEY = 'ABQIAAAAg4UfcFGbpqb2hM8N_OddZRTN7671TIj6LXlFqvc1ykw0Cn7xbBReoN4F_gKB6y9PVIkSUg8zGqkk6g'
+GOOGLE_IMAGE_SEARCH_ENDPOINT = 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q='

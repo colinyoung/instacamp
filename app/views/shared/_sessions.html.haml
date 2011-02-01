@@ -2,6 +2,7 @@
   %p
     signed in with #{current_user.email}. 
     = link_to "sign out", destroy_user_session_path
+    = link_to "edit your account", profile_edit_path if current_user.present?
 - else
   %p
     not signed in.  

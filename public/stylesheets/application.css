@@ -2,7 +2,8 @@ h1 {
   font-family: georgia, sylfaen, serif; }
 
 body {
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  font-size: 10pt; }
 
 #wrap {
   width: 700px;
@@ -13,3 +14,19 @@ body {
 
 #content {
   border-bottom: 1px solid #e7e7e7; }
+
+.result {
+  margin-bottom: 5px;
+  float: left;
+  width: 25%;
+  overflow: hidden; }
+
+p.error {
+  color: red; }
+
+label {
+  font-size: 8pt;
+  width: 100px;
+  display: block;
+  float: left;
+  margin-right: 4px; }

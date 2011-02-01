@@ -1,4 +1,10 @@
+<%= render '/shared/is_valid_user' %>
+
 <h1>Instacamp</h1>
 <h3>spam your co-workers in Campfire with the first image from google image search that matches your word</h3>
 
+<p>currently spamming into <%= current_user.campfire_room %></p>
+
 <%= render "/shared/searchbar" %>
+
+<%= render "/shared/search_results"%>

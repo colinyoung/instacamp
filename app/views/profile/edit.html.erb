@@ -1,0 +1,45 @@
+<p><%= link_to "Home", "/" %></p>
+
+<h1>Edit your profile</h1>
+<%= form_for(@user, :url => profile_update_url, :method => "put") do |f| %>
+  <p>
+    <%= f.label :email %> 
+    <%= f.text_field :email %>
+  </p>
+    
+  <p><em>the important stuff</em></p>
+  
+  <p>
+    <%= f.label :campfire_subdomain %> 
+    <%= f.text_field :campfire_subdomain %>
+  </p>
+
+  <p>
+    <%= f.label :campfire_api_key %> 
+    <%= f.text_field :campfire_api_key %>
+  </p>
+
+  <p><em>optional</em></p>
+
+  <p>
+    <%= f.label :campfire_room %> 
+    <%= f.text_field :campfire_room %>
+  </p>
+  
+  <p><em>leave these next two blank if you don't wanna change your password</em></p>
+  
+  <p>
+    <%= f.label :password %> 
+    <%= f.password_field :password %>
+  </p>
+  
+  <p>
+    <%= f.label :password_confirmation %> 
+    <%= f.password_field :password_confirmation %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+  
+<% end %>

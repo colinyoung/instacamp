@@ -26,18 +26,12 @@
     <%= f.text_field :campfire_room %>
   </p>
   
-  <p><em>leave these next two blank if you don't wanna change your password</em></p>
+  <p><em>resetting your password will log you out</em></p>
   
   <p>
-    <%= f.label :password %> 
-    <%= f.password_field :password %>
+    <%= link_to "create a new password", new_user_password_path %> 
   </p>
-  
-  <p>
-    <%= f.label :password_confirmation %> 
-    <%= f.password_field :password_confirmation %>
-  </p>
-  
+    
   <p>
     <%= f.submit %>
   </p>

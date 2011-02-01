@@ -23,7 +23,7 @@ function populateResults(json) {
 function cls(v) {
   console.log(v)
   $("#search_results").empty().html(v);
-  setTimeout('$("#search_results").empty();',500)
+  setTimeout('$("#search_results").empty();', 3000);
 }
 
 function resultClick(t) {

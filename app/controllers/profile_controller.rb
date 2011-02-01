@@ -6,7 +6,6 @@ class ProfileController < ApplicationController
   def update
     user = params[:user]
     @user = current_user
-    @user.password = user[:password] if user[:password] == user[:password_confirmation] and user[:password].present? and user[:password_confirmation].present?
     @user.email = user[:email]
     @user.campfire_subdomain = user[:campfire_subdomain]
     @user.campfire_api_key = user[:campfire_api_key]

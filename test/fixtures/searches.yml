@@ -1,11 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  search_value: MyString
-  response_url: MyString
-  found: false
+  value: MyString
 
 two:
-  search_value: MyString
-  response_url: MyString
-  found: false
+  value: MyString

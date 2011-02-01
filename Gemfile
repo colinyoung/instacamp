@@ -10,8 +10,8 @@ gem 'tinder'
 gem 'devise'
 gem 'sass'
 gem 'haml'
-gem "mongoid", "2.0.0.rc.6"
-gem "bson_ext", "~> 1.2"
+#gem "mongoid", "2.0.0.rc.6"
+#gem "bson_ext", "~> 1.2"
 gem 'jquery-rails'
 gem 'httparty'
 

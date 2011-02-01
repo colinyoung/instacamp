@@ -23,12 +23,20 @@ function populateResults(json) {
 function cls(v) {
   console.log(v)
   $("#search_results").empty().html(v);
-  setTimeout('$("#search_results").empty();', 3000);
+  setTimeout('$("#search_results").empty(); $("#search_value").val("")', 3000);
 }
 
 function resultClick(t) {
   var object_id = $(t).attr('id').replace(/img\-/gi, '');
   var obj = window.results[object_id];
-  $.post('/chat/new', obj, cls);
+  $.ajax({
+    type: "POST",
+    url: '/chat/new',
+    data: obj,
+    success: cls,
+    beforeSend: function() {
+      $("#search_results").css('opacity', '0.3');
+    }
+    });
 }
 

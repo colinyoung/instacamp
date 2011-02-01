@@ -3,7 +3,9 @@
 <h1>Instacamp</h1>
 <h3>spam your co-workers in Campfire with the first image from google image search that matches your word</h3>
 
+<% if user_signed_in? %>
 <p>currently spamming into <%= current_user.campfire_room %></p>
+<% end %>
 
 <%= render "/shared/searchbar" %>
 

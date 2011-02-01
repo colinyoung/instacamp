@@ -1,4 +1,5 @@
--if current_user.campfire_api_key.nil? or current_user.campfire_subdomain.nil?
-  %p.error 
-    Your account details aren't filled out.  The stuff below won't work.
-    =link_to "fix it here", profile_edit_path 
+-if user_signed_in?
+  -if current_user.campfire_api_key.nil? or current_user.campfire_subdomain.nil?
+    %p.error 
+      Your account details aren't filled out.  The stuff below won't work.
+      =link_to "fix it here", profile_edit_path 

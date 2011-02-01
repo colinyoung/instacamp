@@ -23,6 +23,7 @@ function populateResults(json) {
 function cls(v) {
   console.log(v)
   $("#search_results").empty().html(v);
+  $("#search_results").css('opacity', '1.0');
   setTimeout('$("#search_results").empty(); $("#search_value").val("")', 3000);
 }
 

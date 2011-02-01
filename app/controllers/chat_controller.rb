@@ -2,7 +2,8 @@ class ChatController < ApplicationController
   before_filter :authenticate_user!, :setup_campfire
   
   def new
-    fp = "#{Rails.root}/tmp/#{Time.now.to_i}.#{params[:url].split('.').last}"
+    file_name = URI.escape(params[:url].split('/').last)
+    fp = "#{Rails.root}/tmp/#{file_name}"
 
     uri = URI.parse(params[:url])
     Net::HTTP.start(uri.select(:host).first) do |http|
@@ -16,7 +17,7 @@ class ChatController < ApplicationController
     
     File.unlink fp    
     
-    render :text => "your co-workers hate you because of <em>#{URI.escape(params[:url].split('/').last)}</em>"
+    render :text => "your co-workers hate you because of <em>#{file_name}</em>"
   end
   
   protected

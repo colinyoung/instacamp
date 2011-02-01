@@ -5,8 +5,6 @@ end
 
 class SearchesController < ApplicationController
 
-  before_filter :authenticate_user!
-
   def create
     gis_url = GOOGLE_IMAGE_SEARCH_ENDPOINT
     gis_url += URI.escape(params[:search_value])

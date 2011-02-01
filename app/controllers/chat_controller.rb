@@ -16,7 +16,7 @@ class ChatController < ApplicationController
     
     File.unlink fp    
     
-    render :text => params[:url].split('/').last
+    render :text => "your co-workers hate you because of <em>#{params[:url].split('/').last}</em>"
   end
   
   protected

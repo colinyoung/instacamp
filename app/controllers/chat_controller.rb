@@ -14,7 +14,7 @@ class ChatController < ApplicationController
     
     @room.upload fp
     
-    #File.unlink fp    
+    File.unlink fp    
     
     render :text => params[:url].split('/').last
   end

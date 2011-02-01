@@ -1,0 +1,10 @@
+- if user_signed_in?
+  %p
+    signed in with #{current_user.email}. 
+    = link_to "sign out", destroy_user_session_path
+- else
+  %p
+    not signed in.  
+    = link_to "create your account", new_user_registration_path
+    or 
+    = link_to "login with your email and password", new_user_session_path

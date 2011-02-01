@@ -7,6 +7,12 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'tinder'
+gem 'devise'
+gem 'sass'
+gem 'haml'
+gem "mongoid", "2.0.0.rc.6"
+gem "bson_ext", "~> 1.2"
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

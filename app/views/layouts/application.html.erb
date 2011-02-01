@@ -7,8 +7,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<%= yield %>
+
+<div id="wrap">
+  
+  <div id="sessions"><%= render "/shared/sessions" %></div>
+  
+  <div id="content"><%= yield %></div>
+  
+</div>
 
 </body>
 </html>

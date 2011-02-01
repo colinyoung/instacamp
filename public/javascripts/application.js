@@ -22,8 +22,8 @@ function populateResults(json) {
 
 function cls(v) {
   console.log(v)
-  $("#search_results").empty().text(v);
-  //setTimeout('$("#search_results").empty();',500)
+  $("#search_results").empty().html(v);
+  setTimeout('$("#search_results").empty();',500)
 }
 
 function resultClick(t) {
